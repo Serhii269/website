@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Загружаем боковую панель -->
+      <div id="sidebar-container"></div>
+
+      <!-- Контент главной страницы -->
+      <div class="content">
+        <h1>Welcome to Our World</h1>
+        <div class="content-image">
+          <img src="images/city.jpg" alt="City" />
+        </div>
+        <div class="description">
+          <p>
+            Explore beautiful places and exciting projects. We are happy to have
+            you here!
+          </p>
+        </div>
+        <a href="projects.html" class="main-button">Explore Projects</a>
+      </div>
+    </div>
+
+    <script>
+      // Динамически загружаем sidebar.html
+      fetch("sidebar.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("sidebar-container").innerHTML = data;
+        });
+    </script>
+  </body>
+</html>
