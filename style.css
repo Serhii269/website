@@ -130,3 +130,48 @@ form button {
 form button:hover {
   background-color: #065a88;
 }
+
+/* --- blog.html custom styles --- */
+.profile-photo {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.blog-section {
+  margin-bottom: 40px;
+}
+
+.blog-section h3 {
+  color: #1877f2;
+  margin-bottom: 10px;
+}
+
+.blog-section p {
+  color: #555;
+  line-height: 1.6;
+  font-size: 1.05em;
+}
+/* Страница контактов */
+body.contact-page .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+body.contact-page .content {
+  margin-left: 0; /* Без отступа сайдбара */
+  padding: 40px;
+  width: 100%;
+  max-width: 600px;
+}
+
+body.contact-page .contact-form h1,
+body.contact-page .contact-form .description {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}

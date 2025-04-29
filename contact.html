@@ -9,33 +9,45 @@
       rel="stylesheet"
     />
   </head>
-  <body>
+  <body class="contact-page">
     <div class="container">
       <div id="sidebar-container"></div>
-      <div class="content">
-        <h1>Contact Us</h1>
-        <p class="description">
-          Have any questions or want to get in touch? Fill out the form below
-          and we'll get back to you!
-        </p>
 
-        <form action="https://formspree.io/f/yourformid" method="POST">
-          <input type="email" name="email" placeholder="Your Email" required />
-          <input
-            type="tel"
-            name="phone"
-            placeholder="Your Phone Number"
-            required
-          />
-          <textarea
-            name="message"
-            placeholder="Your Message"
-            required
-          ></textarea>
-          <button type="submit" class="main-button">Send Message</button>
-        </form>
+      <div class="content">
+        <div class="contact-container">
+          <div class="contact-form">
+            <h1>Contact Us</h1>
+            <p class="description">
+              Have any questions or want to get in touch? Fill out the form
+              below and we'll get back to you!
+            </p>
+
+            <!-- Новая форма с Formspree -->
+            <form action="https://formspree.io/f/xblodldn" method="POST">
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+              <input
+                type="tel"
+                name="phone"
+                placeholder="Your Phone Number"
+                required
+              />
+              <textarea
+                name="message"
+                placeholder="Your Message"
+                required
+              ></textarea>
+              <button type="submit" class="main-button">Send Message</button>
+            </form>
+          </div>
+        </div>
       </div>
     </div>
+
     <script>
       fetch("sidebar.html")
         .then((response) => response.text())

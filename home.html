@@ -11,31 +11,30 @@
   </head>
   <body>
     <div class="container">
-      <!-- Здесь будет загружена боковая панель -->
-      <div class="sidebar">
-        <a href="home.html" class="link">Home</a>
-        <a href="about.html" class="link">About</a>
-        <a href="services.html" class="link">Services</a>
-        <a href="contact.html" class="link">Contact</a>
-      </div>
+      <div id="sidebar-container"></div>
 
       <!-- Контент главной страницы -->
       <div class="content">
-        <h1>Welcome to Our Website!</h1>
-        <p>We are happy to see you here.</p>
-        <p>This is a simple, beautiful project made with:</p>
-        <ul>
-          <li>Modern HTML structure</li>
-          <li>Stylish CSS animations</li>
-          <li>Responsive sidebar</li>
-        </ul>
+        <h1>Welcome to Winterthur!</h1>
+        <p class="description">
+          Discover the beauty of this wonderful Swiss city.
+        </p>
 
-        <img src="images/city.jpg" alt="City" class="main-image" />
+        <div class="content-image">
+          <img src="images/city.jpg" alt="Winterthur" />
+        </div>
 
-        <br /><br />
-
-        <a href="about.html" class="main-button">Learn More About Us</a>
+        <a href="about.html" class="main-button">Learn More About Winterthur</a>
       </div>
     </div>
+
+    <script>
+      fetch("sidebar.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("sidebar-container").innerHTML = data;
+        })
+        .catch((error) => console.error("Error loading sidebar:", error));
+    </script>
   </body>
 </html>

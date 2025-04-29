@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog</title>
     <link rel="stylesheet" href="style.css" />
     <link
@@ -11,24 +12,114 @@
   </head>
   <body>
     <div class="container">
-      <div id="sidebar-container"></div>
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <a href="home.html" class="link">Home</a>
+        <a href="about.html" class="link">About</a>
+        <a href="blog.html" class="link">Blog</a>
+        <a href="contact.html" class="link">Contact</a>
+      </div>
+
+      <!-- Main Content -->
       <div class="content">
-        <h1>Our Blog</h1>
-        <p class="description">
-          Read our latest posts and updates about Winterthur and Switzerland.
-        </p>
-        <textarea
-          placeholder="Write your thoughts here..."
-          class="blog-textarea"
-        ></textarea>
+        <h1>About Me</h1>
+
+        <!-- Фото по центру -->
+        <div class="content-image">
+          <img
+            src="images/serhii.jpg"
+            alt="Serhii Pidhorodetskyi"
+            class="profile-photo"
+          />
+        </div>
+
+        <div class="blog-section">
+          <h3>Personal Information</h3>
+          <p>
+            Hello everyone! My name is Serhii Pidhorodetskyi, and I live in the
+            beautiful city of Winterthur. I am 17 years old.
+          </p>
+        </div>
+
+        <div class="blog-section">
+          <h3>My Hobbies</h3>
+          <p>
+            One of my greatest passions is chess. I am proud to be a member of
+            the Winterthur Chess Club. I began playing chess in childhood,
+            inspired by my grandfather, who was also a chess player. Chess
+            fascinates me because it strengthens my logical thinking and
+            decision-making skills.
+          </p>
+          <p>
+            In addition to chess, I love spending time outdoors in nature and
+            staying active through sports. For a long time, I regularly went to
+            the gym; however, at the moment, I have less time for it due to
+            other commitments.
+          </p>
+        </div>
+
+        <div class="blog-section">
+          <h3>Moving to Switzerland</h3>
+          <p>
+            My move to Switzerland went quite smoothly, as I had already been
+            studying German in my home country. After arriving, I practiced the
+            language daily through conversations and significantly improved my
+            skills. I also made many new friends who share my interests and
+            hobbies.
+          </p>
+          <p>
+            One of them is my friend Pavel, who has already completed his
+            Lehrstelle as a programmer and is currently studying and working at
+            Roche.
+          </p>
+        </div>
+
+        <div class="blog-section">
+          <h3>Why I Love Switzerland</h3>
+          <p>
+            I have truly fallen in love with Switzerland — for its breathtaking
+            nature, peaceful atmosphere, and the kindness of its people. I have
+            visited many Swiss cities, but my heart belongs to Winterthur. Its
+            calmness and beauty make it a wonderful place to live.
+          </p>
+          <p>
+            I also deeply respect Swiss holidays and traditions, which have
+            become an important part of my life. Switzerland has truly become my
+            second home.
+          </p>
+        </div>
+
+        <div class="blog-section">
+          <h3>My Dreams and Goals</h3>
+          <p>
+            From a young age, I developed a strong passion for programming. My
+            favorite school subjects were computer science and mathematics, and
+            it was clear to me early on that I wanted to build my future in the
+            world of technology.
+          </p>
+          <p>
+            I have completed courses in Python and already have practical
+            experience with the language. Additionally, I am currently learning
+            HTML and CSS. At the moment, I am actively searching for an
+            apprenticeship (Lehrstelle) as a programmer.
+          </p>
+          <p>
+            My long-term goal is to become a professional developer and, one
+            day, a Senior Developer. I am highly motivated, a quick learner,
+            skilled at problem-solving, and I thrive when working
+            collaboratively in a team environment.
+          </p>
+        </div>
+
+        <div class="content-image">
+          <a
+            href="https://github.com/Serhii269"
+            class="main-button"
+            target="_blank"
+            >Visit my GitHub</a
+          >
+        </div>
       </div>
     </div>
-    <script>
-      fetch("sidebar.html")
-        .then((response) => response.text())
-        .then((data) => {
-          document.getElementById("sidebar-container").innerHTML = data;
-        });
-    </script>
   </body>
 </html>
