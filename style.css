@@ -154,7 +154,7 @@ form button:hover {
   line-height: 1.6;
   font-size: 1.05em;
 }
-/* Страница контактов */
+/* Contact page */
 body.contact-page .container {
   display: flex;
   justify-content: center;
@@ -163,7 +163,7 @@ body.contact-page .container {
 }
 
 body.contact-page .content {
-  margin-left: 0; /* Без отступа сайдбара */
+  margin-left: 0; 
   padding: 40px;
   width: 100%;
   max-width: 600px;
